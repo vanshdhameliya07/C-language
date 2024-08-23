@@ -4,7 +4,6 @@ main()
     int size, i, j;
     printf("enter element :- ");
     scanf("%d", &size);
-    
 
     int a[size];
     for (i = 0; i < size; i++)
@@ -19,9 +18,8 @@ main()
         {
             if (a[i] == a[j])
             {
-                printf("%d", a[i]);
+                printf("Duplication Elements:- %d", a[i]);
             }
-            
         }
         printf("\n");
     }

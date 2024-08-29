@@ -19,11 +19,12 @@ main()
     // 0 1 2  0 1 2
 
     int len = i;
+    int n = 0;
+
     char var[20];
     for (int i = len - 1; i >= 0; i--)
     {
-        var[i] = reverse[i];
-        printf("%c", reverse[i]);
+        var[n++] = reverse[i];
     }
 
     printf("\n\n");
@@ -31,16 +32,18 @@ main()
     int palindrome = 1;
     for (int i = 0; i < len; i++)
     {
-        if (reverse[i] != var[i])
+        if (reverse[i] == var[i])
         {
             palindrome = 0;
         }
-        else{
+        else
+        {
             palindrome = 1;
+            break;
         }
     }
 
-    if (palindrome=1)
+    if (palindrome == 0)
     {
         printf("The string is a palindrome.\n");
     }

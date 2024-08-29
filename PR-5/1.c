@@ -14,11 +14,11 @@ main()
 
     for (i = 0; i < size; i++)
     {
-        for (j = i + 1; j < size; j++)
+        for (j = 1; j < size; j++)
         {
             if (a[i] == a[j])
             {
-                printf("Duplication Elements:- %d", a[i]);
+                printf("Duplication Elements:- %d\n", a[i]);
             }
         }
         printf("\n");

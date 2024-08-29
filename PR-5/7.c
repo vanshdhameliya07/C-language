@@ -31,5 +31,5 @@ int main()
     }
 
     printf("The largest element is: %d\n", large);
-    return 0;
+    
 }

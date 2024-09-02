@@ -20,9 +20,13 @@ int subtraction(int first, int second)
 }
 int multiplication(int first, int second)
 {
-    return first - second;
+    return first * second;
 }
 int division(int first, int second)
 {
-    return first - second;
+    return first / second;
+}
+int modulas(int first, int second)
+{
+    return first % second;
 }

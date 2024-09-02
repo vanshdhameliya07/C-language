@@ -1,7 +1,7 @@
 #include <stdio.h>
 int cubes(int *a)
 {
-    return (*a) * (*a);
+    return (*a) * (*a)*(*a);
 }
 void main()
 {

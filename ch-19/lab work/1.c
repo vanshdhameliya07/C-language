@@ -1,22 +1,27 @@
 #include <stdio.h>
+
+void sum(int a[], int size)
+{
+    int sum = 0;
+    for (int i = 0; i < size; i++)
+    {
+        sum = sum + a[i];
+    }
+    printf("%d ", sum);
+}
 void main()
 {
+    int size, i;
+    printf("enter array size = ");
+    scanf("%d", &size);
 
-    int ptr[5];
+    int a[size];
 
-    printf("Enter the array's size: ");
-    scanf("%d", &ptr);
-
-    for (int i = 0; i < 3; i++)
+    for (i = 0; i < size; i++)
     {
-        scanf("%d\t", &ptr[i]);
+        printf("[%d] =", i);
+        scanf("%d", &a[i]);
     }
 
-    printf("\n\n");
-
-    for (int i = 0; i < 3; i++)
-    {
-        int mul = ptr[i] * ptr[i];
-        printf("%d\t", mul);
-    }
+    sum(a, size);
 }

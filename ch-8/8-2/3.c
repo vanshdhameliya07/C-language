@@ -18,6 +18,7 @@ main()
                 int c = a[i];
                 a[i] = a[j];
                 a[j] = c;
+                
             }
         }
     }

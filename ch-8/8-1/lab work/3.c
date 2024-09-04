@@ -24,12 +24,15 @@ main()
         scanf("%d", &b[i]);
     }
 
-    int c = 0;
+    int c[size], i;
 
     for (int i = 0; i < size; i++)
     {
-        c = a[i] + b[i];
+        c[i] = a[i] + b[i];
     }
 
-    printf("c %d \n\n ", c);
+    for (int i = 0; i < size; i++)
+    {
+        printf("Array C is: %d\n, ", c[i]);
+    }
 }

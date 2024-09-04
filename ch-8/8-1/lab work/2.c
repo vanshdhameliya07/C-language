@@ -18,5 +18,5 @@ main()
 
     printf("sum = %d", sum);
     printf("\n\n");
-    printf("avg = %f", (float)sum / size);
+    printf("avg = %.2f", (float)sum / size);
 }

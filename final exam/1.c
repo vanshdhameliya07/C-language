@@ -11,7 +11,7 @@ main()
 
     printf("%d\n", first);
 
-    last = no / 100;
+    last = no % 10;
 
     printf("%d\n", last);
 

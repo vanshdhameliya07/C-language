@@ -9,7 +9,10 @@ int consonant(char ch)
     {
         return 0;
     }
-    return 1;
+    else
+    {
+        return 1;
+    }
 }
 
 int main()
@@ -21,10 +24,10 @@ int main()
 
     if (consonant(ch))
     {
-        printf("%c a consonant.\n", ch);
+        printf("%c are consonant.\n", ch);
     }
     else
     {
-        printf("%c not a consonant.\n", ch);
+        printf("%c are consonant.\n", ch);
     }
 }

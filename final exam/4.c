@@ -3,11 +3,11 @@ int divisible(int no)
 {
     if (no % 3 == 0 && no % 5 == 0)
     {
-        return 1;
+        return 0;
     }
     else
     {
-        return 0;
+        return 1;
     }
 }
 

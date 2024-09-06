@@ -9,7 +9,9 @@ int main()
 
         printf("enter your choice: ");
         scanf("%d", &choice);
+
         int first, second;
+
         switch (choice)
         {
         case 1:
@@ -33,13 +35,13 @@ int main()
             scanf("%d", &second);
             printf("multiplication\t: %d", multiplication(first, second));
             break;
-         case 4:
+        case 4:
             printf("Enter the first number: ");
             scanf("%d", &first);
             printf("Enter the second number: ");
             scanf("%d", &second);
             if (second != 0)
-                printf("Division: %d\n", division(first, second));
+                printf("division: %d\n", division(first, second));
             else
                 printf("Error: Division by zero is not allowed.\n");
             break;
@@ -49,14 +51,14 @@ int main()
             printf("Enter the second number: ");
             scanf("%d", &second);
             if (second != 0)
-                printf("Modulus: %d\n", modulas(first, second));
+                printf("Modulus: %f\n", modulas(first, second));
             else
                 printf("Error: Modulus by zero is not allowed.\n");
             break;
 
         case 0:
-              printf("exiting ...");  
-              break;
+            printf("exiting ...");
+            break;
 
         default:
             break;

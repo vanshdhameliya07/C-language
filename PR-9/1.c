@@ -24,9 +24,6 @@ void main()
         fprintf(fp, "file not open");
     }
 
-
-
-
     fp = fopen("odd.text ", "w");
 
     if (fp != "\0")
